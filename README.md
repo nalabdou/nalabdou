@@ -83,8 +83,7 @@
 ### :bird: Latest Twitter Updates
 
 <!-- TWITTER:START -->
-
--   [nalabdou: développez vos applications #symfony très rapidement avec l'aide de cette extension pour #vscode](https://twitter.com/nalabdou/status/1292496030131539968)
+- [nalabdou: développez vos applications #symfony  très rapidement avec l'aide de cette extension pour #vscode](https://twitter.com/nalabdou/status/1292496030131539968)
 <!-- TWITTER:END -->
 
 ---
