@@ -90,21 +90,9 @@
 
 ---
 
-<div style="display:flex; justify-content: space-between;">
-
-<div style='margin-right:10px;'>
 
 ![nalabdou github stats](https://github-readme-stats.vercel.app/api?username=nalabdou&count_private=true&show_icons=true&line_height=34)
 
-</div>
-
-<div>
-
-![Top Langs](https://github-readme-stats.vercel.app/api/top-langs/?username=nalabdou)
-
-</div>
-
-</div>
 
 [website]: https://nalabdou.com
 [twitter]: https://twitter.com/nalabdou
