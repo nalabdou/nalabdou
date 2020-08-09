@@ -75,8 +75,7 @@
 ### :pencil2: Dev.to Blog posts
 
 <!-- BLOG-POST-LIST:START -->
-
--   [Symfony Code Snippets Extension For Visual Studio Code](https://dev.to/nalabdou/symfony-code-snippets-extension-for-visual-studio-code-13f7)
+- [Symfony Code Snippets Extension For Visual Studio Code](https://dev.to/nalabdou/symfony-code-snippets-extension-for-visual-studio-code-13f7)
 <!-- BLOG-POST-LIST:END -->
 
 ---
