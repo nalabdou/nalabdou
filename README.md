@@ -14,6 +14,7 @@
 [<img align="left" alt="nalabdou | LinkedIn" width="22px" src="https://cdn.jsdelivr.net/npm/simple-icons@v3/icons/linkedin.svg" />][linkedin]
 [<img align="left" alt="nalabdou | facebook" width="22px" src="https://cdn.jsdelivr.net/npm/simple-icons@v3/icons/facebook.svg" />][facebook]
 [<img align="left" alt="nalabdou | email" width="22px" src="https://cdn.jsdelivr.net/npm/simple-icons@v3/icons/gmail.svg" />][email]
+[<img align="left" alt="nalabdou | stakoverflow" width="22px" src="https://cdn.jsdelivr.net/npm/simple-icons@v3/icons/stackoverflow.svg" />] [stackoverflow]
 
 <br />
 
@@ -99,3 +100,4 @@
 [linkedin]: https://linkedin.com/in/nalabdou
 [facebook]: https://facebook.com/nalabdou
 [email]: mailto:hello@nalabdou.com
+[stackoverflow]: https://stackoverflow.com/users/12172540/nadim-al-abdou
