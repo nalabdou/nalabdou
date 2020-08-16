@@ -86,7 +86,7 @@
 ### :bird: Latest Twitter Updates
 
 <!-- TWITTER:START -->
-- [nalabdou: développez vos applications #symfony  très rapidement avec l'aide de cette extension pour #vscode](https://twitter.com/nalabdou/status/1292496030131539968)
+- [[Action required] Your RSS.app Trial has Expired - Sun Aug 16 2020](https://rss.app)
 <!-- TWITTER:END -->
 
 ---
