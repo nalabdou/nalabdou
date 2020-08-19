@@ -86,7 +86,7 @@
 ### :bird: Latest Twitter Updates
 
 <!-- TWITTER:START -->
-- [[Action required] Your RSS.app Trial has Expired - Tue Aug 18 2020](https://rss.app)
+- [[Action required] Your RSS.app Trial has Expired - Wed Aug 19 2020](https://rss.app)
 <!-- TWITTER:END -->
 
 ---
