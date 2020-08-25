@@ -83,13 +83,6 @@
 
 ---
 
-### :bird: Latest Twitter Updates
-
-<!-- TWITTER:START -->
-- [[Action required] Your RSS.app Trial has Expired - Wed Aug 19 2020](https://rss.app)
-<!-- TWITTER:END -->
-
----
 
 
 ![nalabdou github stats](https://github-readme-stats.vercel.app/api?username=nalabdou&count_private=true&show_icons=true&line_height=34)
