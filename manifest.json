@@ -2,7 +2,7 @@
     "name": "مدونة نديم",
     "short_name": "مدونة",
     "lang": "ar-AR",
-    "start_url": "/",
+    "start_url": "https://blog.nalabdou.com",
     "display": "standalone",
     "orientation": "portrait",
     "description": "مدونة عربية لنشر المعرفة",
