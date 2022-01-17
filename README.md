@@ -4,7 +4,7 @@
 
 -   🌱 I’m currently learning React JS & React Native
 -   👯 I’m looking to collaborate with other Developers
--   🥅 2020 Goals: Contribute more to Open Source projects
+-   🥅 2022 Goals: Contribute more to Open Source projects
 -   ⚡ <s>Fun fact: I love Chocolat</s> Before 2022
 
 ### Connect with me:
