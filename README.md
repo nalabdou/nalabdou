@@ -7,6 +7,7 @@
 -   🥅 2022 Goals: Contribute more to Open Source projects
 -   ⚡ <s>Fun fact: I love Chocolat</s> Before 2022
 
+`If eval() is the answer, you're almost certainly asking the wrong question.`
 ### Connect with me:
 
 [<img align="left" alt="nalabdou.com" width="22px" src="https://raw.githubusercontent.com/iconic/open-iconic/master/svg/globe.svg" />][website]
