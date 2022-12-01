@@ -3,7 +3,7 @@
 
 <p align="left"> <img src="https://komarev.com/ghpvc/?username=nalabdou&label=Profile%20views&color=7f49c1&style=flat" alt="nalabdou" /> </p>
 
-<p align="left"> <a href="https://github.com/ryo-ma/github-profile-trophy"><img src="https://github-profile-trophy.vercel.app/?username=nalabdou" alt="nalabdou" /></a> </p>
+<p align="left"> <a href="#"><img src="https://github-profile-trophy.vercel.app/?username=nalabdou" alt="nalabdou" /></a> </p>
 
 - 🔭 I’m currently working on [Symfony code snippets extension](https://github.com/nalabdou/symfony-code-snippets)
 
