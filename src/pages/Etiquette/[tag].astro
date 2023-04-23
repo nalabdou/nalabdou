@@ -1,0 +1,119 @@
+---
+import { getCollection } from "astro:content";
+import HorizontalCard from "../../components/HorizontalCard.astro";
+import BaseLayout from "../../layouts/BaseLayout.astro";
+import { Breadcrumbs } from "astro-breadcrumbs";
+
+export async function getStaticPaths() {
+  const allPosts = await getCollection("blog");
+  const allProjets = await getCollection("projets");
+  const uniqueTags = [
+    ...new Set(
+      [...allPosts, ...allProjets].map((post) => post.data.tags).flat()
+    ),
+  ];
+  return uniqueTags.map((tag) => {
+    const filteredPosts = allPosts.filter((post) =>
+      post.data.tags?.includes(tag as string)
+    );
+
+    const filteredProjets = allProjets.filter((projet) =>
+      projet.data.tags?.includes(tag as string)
+    );
+
+    return {
+      params: { tag },
+      props: {
+        posts: filteredPosts,
+        projets: filteredProjets,
+      },
+    };
+  });
+}
+
+const { tag } = Astro.params;
+const { posts, projets } = Astro.props;
+---
+
+<BaseLayout title={`Étiquette ${tag}`} useTitle={true}>
+  <Breadcrumbs indexText="🛖 Accueil">
+    <svg
+      slot="separator"
+      xmlns="http://www.w3.org/2000/svg"
+      width="24"
+      height="24"
+      viewBox="0 0 24 24"
+      fill="none"
+      stroke="currentColor"
+      stroke-width="2"
+      stroke-linecap="round"
+      stroke-linejoin="round"
+      ><polyline points="9 18 15 12 9 6"></polyline>
+    </svg>
+  </Breadcrumbs>
+  <div class="mt-2">
+    <h2 class="text-3xl w-full font-bold mb-2">
+      {posts.length} Article{posts.length > 1 ? "s" : ""} &
+      {projets.length} Projet{projets.length > 1 ? "s" : ""}
+      <span class="text-primary font-bold">#{tag}</span>
+    </h2>
+  </div>
+  <div class="divider my-4"></div>
+  <ul>
+    {
+      posts.map(
+        (post: {
+          data: {
+            title: string;
+            heroImage: string;
+            description: string;
+            badge: string;
+            tags: string[];
+          };
+          slug: string;
+        }) => (
+          <>
+            <HorizontalCard
+              title={post.data.title}
+              img={post.data.heroImage}
+              desc={post.data.description}
+              url={`/blog/${post.slug}`}
+              target="_self"
+              badge={`Article`}
+              tags={post.data.tags}
+            />
+            <div class="divider my-0" />
+          </>
+        )
+      )
+    }
+    {
+      projets.map(
+        (projet: {
+          data: {
+            title: string;
+            icon: string;
+            description: string;
+            link: string;
+            tags: string[];
+            installs: number;
+          };
+        }) => (
+          <>
+            <HorizontalCard
+              title={projet.data.title}
+              img={projet.data.icon}
+              desc={projet.data.description}
+              url={projet.data.link}
+              badge={`Projet`}
+              tags={projet.data.tags}
+              invert={true}
+              installs={projet.data.installs}
+            />
+            <div class="divider my-0" />
+          </>
+        )
+      )
+    }
+  </ul>
+</BaseLayout>

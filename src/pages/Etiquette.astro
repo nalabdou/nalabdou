@@ -1,0 +1,48 @@
+---
+import BaseLayout from "../layouts/BaseLayout.astro";
+import HorizontalCard from "../components/HorizontalCard.astro";
+import { getCollection } from "astro:content";
+import { Breadcrumbs } from "astro-breadcrumbs";
+
+const allPosts = await getCollection("blog");
+const uniqueTags = [...new Set(allPosts.map((post) => post.data.tags).flat())];
+
+const count = (tag: string) => {
+    return allPosts.filter((post) => post.data.tags?.includes(tag)).length;
+};
+---
+
+<BaseLayout title="Étiquettes" useTitle={true}>
+    <Breadcrumbs indexText="🛖 Accueil">
+        <svg
+            slot="separator"
+            xmlns="http://www.w3.org/2000/svg"
+            width="24"
+            height="24"
+            viewBox="0 0 24 24"
+            fill="none"
+            stroke="currentColor"
+            stroke-width="2"
+            stroke-linecap="round"
+            stroke-linejoin="round"
+            ><polyline points="9 18 15 12 9 6"></polyline>
+        </svg>
+    </Breadcrumbs>
+    <section class="m-6 p-5 border rounded-md">
+        <ul class="flex flex-wrap gap-3 justify-center">
+            {
+                uniqueTags.map((tag: string) => {
+                    return (
+                        <a
+                            href={`/Etiquette/${tag}`}
+                            class="bg-primary rounded-md px-3 py-2"
+                        >
+                            #{tag}{" "}
+                            <span class="badge badge-secondary"> {count(tag)}</span>
+                        </a>
+                    );
+                })
+            }
+        </ul>
+    </section>
+</BaseLayout>

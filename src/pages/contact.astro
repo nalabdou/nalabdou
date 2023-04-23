@@ -1,0 +1,132 @@
+---
+import { Breadcrumbs } from "astro-breadcrumbs";
+import BaseLayout from "../layouts/BaseLayout.astro";
+---
+
+<BaseLayout title="Envoyez-moi un message" full={true}>
+    <Breadcrumbs indexText="🛖 Accueil">
+        <svg
+            slot="separator"
+            xmlns="http://www.w3.org/2000/svg"
+            width="24"
+            height="24"
+            viewBox="0 0 24 24"
+            fill="none"
+            stroke="currentColor"
+            stroke-width="2"
+            stroke-linecap="round"
+            stroke-linejoin="round"
+            ><polyline points="9 18 15 12 9 6"></polyline>
+        </svg>
+    </Breadcrumbs>
+    <div class="mx-auto w-full px-4 sm:px-6">
+        <div class="mx-auto w-full">
+            <form
+                name="contact-form"
+                class="mb-0 mt-6 space-y-4 rounded-lg sm:p-2"
+                data-netlify="true"
+                data-netlify-recaptcha="true"
+            >
+                <p class="hidden">
+                    <label>
+                        Don’t fill this out if you’re human: <input
+                            name="bot-field"
+                        />
+                    </label>
+                </p>
+                <p class="text-center text-lg font-medium">
+                    Envoyez-moi un message
+                </p>
+
+                <div>
+                    <label for="name" class="sr-only"> Nom et prénom</label>
+
+                    <div class="relative">
+                        <input
+                            id="name"
+                            type="text"
+                            class="w-full rounded-lg border-gray-200 p-4 pe-12 text-sm shadow-sm"
+                            placeholder="Saisissez votre nom et prénom"
+                            autocomplete="given-name"
+                            autofocus
+                            name="name"
+                            required
+                        />
+                        <span
+                            class="absolute inset-y-0 end-0 grid place-content-center px-4"
+                        >
+                            <svg
+                                xmlns="http://www.w3.org/2000/svg"
+                                fill="none"
+                                viewBox="0 0 24 24"
+                                stroke-width="1.5"
+                                stroke="currentColor"
+                                class="h-4 w-4 text-gray-400"
+                            >
+                                <path
+                                    stroke-linecap="round"
+                                    stroke-linejoin="round"
+                                    d="M15.75 6a3.75 3.75 0 11-7.5 0 3.75 3.75 0 017.5 0zM4.501 20.118a7.5 7.5 0 0114.998 0A17.933 17.933 0 0112 21.75c-2.676 0-5.216-.584-7.499-1.632z"
+                                ></path>
+                            </svg>
+                        </span>
+                    </div>
+                </div>
+                <div>
+                    <label for="email" class="sr-only"> Votre Email</label>
+
+                    <div class="relative">
+                        <input
+                            id="email"
+                            type="email"
+                            class="w-full rounded-lg border-gray-200 p-4 pe-12 text-sm shadow-sm"
+                            placeholder="Saisissez votre E-mail"
+                            autocomplete="email"
+                            name="email"
+                            required
+                        />
+
+                        <span
+                            class="absolute inset-y-0 end-0 grid place-content-center px-4"
+                        >
+                            <svg
+                                xmlns="http://www.w3.org/2000/svg"
+                                fill="none"
+                                viewBox="0 0 24 24"
+                                stroke-width="1.5"
+                                stroke="currentColor"
+                                class="h-4 w-4 text-gray-400"
+                            >
+                                <path
+                                    stroke-linecap="round"
+                                    d="M16.5 12a4.5 4.5 0 11-9 0 4.5 4.5 0 019 0zm0 0c0 1.657 1.007 3 2.25 3S21 13.657 21 12a9 9 0 10-2.636 6.364M16.5 12V8.25"
+                                ></path>
+                            </svg>
+                        </span>
+                    </div>
+                </div>
+                <div>
+                    <label for="message" class="sr-only"> Nom et prénom</label>
+
+                    <div class="relative">
+                        <textarea
+                            class="w-full rounded-lg border-gray-200 p-4 pe-12 text-sm shadow-sm"
+                            name="message"
+                            id="message"
+                            cols="30"
+                            rows="5"
+                            spellcheck="false"
+                            required
+                            placeholder="Saisissez votre message"></textarea>
+                    </div>
+                </div>
+                <div data-netlify-recaptcha="true"></div>
+                <div class="text-center">
+                    <button type="submit" class="btn btn-primary w-1/2 btn-md">
+                        Envoyez
+                    </button>
+                </div>
+            </form>
+        </div>
+    </div>
+</BaseLayout>

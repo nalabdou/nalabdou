@@ -1,0 +1,71 @@
+---
+import { BlogSchema } from "../content/config";
+import BaseLayout from "./BaseLayout.astro";
+import { FrDate } from "../helpers/Date";
+import { Breadcrumbs } from "astro-breadcrumbs";
+
+export interface Props extends BlogSchema {}
+
+const { title, description, pubDate, updatedDate, heroImage, tags } =
+  Astro.props;
+const displayDate = FrDate(pubDate);
+---
+
+<BaseLayout title={title} description={description} image={heroImage}>
+  <main class="md:flex md:justify-center">
+    <article class="prose prose-lg max-w-[750px] prose-img:mx-auto">
+      {
+        heroImage && (
+          <img
+            src={heroImage}
+            alt={title}
+            class="w-full mb-6"
+            width="1200"
+            height="630"
+          />
+        )
+      }
+      <Breadcrumbs indexText="🛖 Accueil">
+        <svg
+          slot="separator"
+          xmlns="http://www.w3.org/2000/svg"
+          width="24"
+          height="24"
+          viewBox="0 0 24 24"
+          fill="none"
+          stroke="currentColor"
+          stroke-width="2"
+          stroke-linecap="round"
+          stroke-linejoin="round"
+          ><polyline points="9 18 15 12 9 6"></polyline>
+        </svg>
+      </Breadcrumbs>
+      <h1 class="title my-2 text-4xl font-bold">
+        {title}
+      </h1>
+      {pubDate && <time>{displayDate}</time>}
+      <div class="divider my-2"></div>
+      {
+        tags?.map((tag: string) => {
+          return (
+            <a
+              class="badge badge-primary my-1 no-underline mx-1"
+              href={`/Etiquette/${tag}`}
+            >
+              #{tag}
+            </a>
+          );
+        })
+      }
+      <slot />
+      {
+        updatedDate && (
+          <div>
+            {" "}
+            Dernière mise à jour le <time>{FrDate(updatedDate)}</time>{" "}
+          </div>
+        )
+      }
+    </article>
+  </main>
+</BaseLayout>
