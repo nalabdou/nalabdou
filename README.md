@@ -1,3 +1,8 @@
 ```php
-// I first noticed I was going bald when it took longer and longer to wash my face.👨‍🦲 
+/*
+ * J'ai appris que les gens oublieront ce que vous avez dit,
+ * les gens oublieront ce que vous avez fait,
+ * mais les gens n'oublieront jamais ce que vous leur avez fait ressentir.
+ */
+ #Maya Angelou
 ```
