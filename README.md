@@ -13,10 +13,16 @@ I am a Lead Developer based in Strasbourg, France, passionate about crafting ele
 
 ---
 
-### 📊 My GitHub Stats
+### 📊 My GitHub Stats & Achievements
 <p align="center">
   <img src="https://github-readme-stats.vercel.app/api?username=nalabdou&show_icons=true&theme=radical&hide_border=true&count_private=true" alt="Nadim's GitHub Stats" />
   <img src="https://github-readme-stats.vercel.app/api/top-langs/?username=nalabdou&layout=compact&theme=radical&hide_border=true" alt="Top Languages" />
+</p>
+
+<p align="center">
+  <a href="https://github.com/nalabdou?tab=achievements">
+    <img src="https://github-profile-achievements.vercel.app/api?username=nalabdou&compact=true" alt="GitHub Achievements" />
+  </a>
 </p>
 
 ---
@@ -28,6 +34,7 @@ I am a Lead Developer based in Strasbourg, France, passionate about crafting ele
 *   Implements `JOIN`, `PIVOT`, `WINDOW`, `GROUP BY`, and 60+ operations on any PHP collection (arrays, generators, etc.).
 *   **Zero framework dependencies.**
 *   Features an automatic **Query Planner** that optimizes operation order for performance.
+*   **Ecosystem:** [algebra-symfony](https://github.com/nalabdou/algebra-symfony) (DI & Doctrine integration), [algebra-csv](https://github.com/nalabdou/algebra-csv) (CSV adapter).
 *   *“Stop writing nested loops; start writing algebra.”*
 
 #### 🛡️ [disposable-email-bundle](https://github.com/nalabdou/disposable-email-bundle)
